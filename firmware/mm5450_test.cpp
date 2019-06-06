@@ -28,11 +28,10 @@ void setup() {
 	RED.initialize();
 	YELLOW.initialize();
 	GREEN.initialize();
-#ifdef CURRENT_TEST
-	RED.setLed(0, 1);
-	RED.setLed(1, 1);
-	RED.setLed(2, 1);
-#endif
+	// nice all-LEDs-on test pattern
+	RED.assignLedRange(0, 1, 30, 0x3FFFFFFF);
+	RED.assignLedRange(1, 1, 30, 0x3FFFFFFF);
+	RED.assignLedRange(2, 1, 30, 0x3FFFFFFF);
 }
 
 void loop() {
