@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <SPI.h>
 
-#include "mm5450.h"
+#include <mm5450.h>
 
 MultiplexMM5450 RED(9), YELLOW(8), GREEN(7);
 
